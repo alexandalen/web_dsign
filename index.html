@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="header"> 
+      <div class="container"><img class="logo" src="./wang_img/logo.png" alt="">
+        <div class="h_btn">
+          <a class="home" href="./index.html">首頁</a>
+          <a class="price" href="./index_price.html">定價</a>
+        </div>
+        <div class="h_hamber">
+          <label class="dropdown">
+            <input class="dropdown-toggle" type="checkbox">
+            <div class="hamber"> <i class="fas fa-bars"></i></div>
+            <div class="dropdown-content"><a class="drd_h" href="./index.html">首頁 </a><a class="drd_p" href="./index_price.html">定價</a></div>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="section section_top"> 
+      <div class="container">
+        <div class="title"> 
+          <p>透過<br>AI 工具王的<br>強大模型<br>讓您的業務更聰明</p>
+          <div class="t_btn">開始使用</div>
+        </div>
+        <div class="animation_pic"><img class="t_pic1" src="./wang_img/deco.png" alt=""><img class="t_pic2" src="./wang_img/deco.png" alt=""><img class="t_pic3" src="./wang_img/deco.png" alt=""></div>
+      </div>
+    </div>
+    <div class="section section_serve">
+      <div class="container"> 
+        <div class="artical"> 
+          <p class="art1">我們的服務 </p>
+          <p class="art2">我們相信透過 AI 技術，<br>包括圖像識別、自然語言處理和機器翻<br>譯等，讓您更快、更準確地做出決策。</p>
+        </div>
+        <div class="serve"> 
+          <div class="serve1"><img class="icon" src="./wang_img/icons/flash_on.png" alt="">
+            <p class="sub_t">快速</p>
+            <p class="con">我們先進的推理基礎設施提供了極短的響應時間，讓你的產品服務不間斷。</p>
+          </div>
+          <div class="serve2"> <img class="icon" src="./wang_img/icons/auto_awesome.png" alt="">
+            <p class="sub_t">靈活</p>
+            <p class="con">我們的服務可以根據您的需求進行靈活調整，同時還可以滿足不同項目和預算的需求。</p>
+          </div>
+          <div class="serve3"> <img class="icon" src="./wang_img/icons/library_add.png" alt="">
+            <p class="sub_t">擴充</p>
+            <p class="con">我們的服務支持多種擴充選項，可以滿足您的不斷增長的 AI 需求。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section section_coworker"> 
+      <div class="container">
+        <div class="worker_title">來自合作夥伴</div>
+        <div class="worker_logo"> 
+          <div class="worker_logo1">
+            <div class="pic"><img class="lg1" src="./wang_img/enterprise1.png" alt=""></div>
+            <div class="pic"><img class="lg2" src="./wang_img/enterprise2.png" alt=""></div>
+            <div class="pic"><img class="lg3" src="./wang_img/enterprise3.png" alt=""></div>
+            <div class="pic"><img class="lg4" src="./wang_img/enterprise4.png" alt=""></div>
+            <div class="pic"><img class="lg5" src="./wang_img/enterprise5.png" alt=""></div>
+            <div class="pic"><img class="lg6" src="./wang_img/enterprise6.png" alt=""></div>
+          </div>
+          <div class="worker_logo2">
+            <div class="pic"><img class="lg7" src="./wang_img/enterprise7.png" alt=""></div>
+            <div class="pic"><img class="lg8" src="./wang_img/enterprise8.png" alt=""></div>
+            <div class="pic"><img class="lg9" src="./wang_img/enterprise9.png" alt=""></div>
+            <div class="pic"><img class="lg10" src="./wang_img/enterprise.png" alt=""></div>
+            <div class="pic"><img class="lg11" src="./wang_img/enterprise11.png" alt=""></div>
+            <div class="pic"><img class="lg12" src="./wang_img/enterprise12.png" alt=""></div>
+          </div>
+        </div>
+        <div class="commend" id="commend">
+          <div class="card" v-for="cls in custumer_list">
+            <div class="star">{{cls.star}}</div>
+            <div class="cmd_artical">{{cls.descript}}</div>
+            <div class="custumer"> 
+              <div class="cust" v-bind:style="'background-image:url('+cls.img+')'"></div>
+              <div class="info">
+                <div class="info_name">{{cls.name}}</div>
+                <div class="info_company">{{cls.company}}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="commend1">
+          <div class="cards-container">
+            <div class="card1">
+              <div class="star">⭐️⭐️⭐️⭐️⭐️</div>
+              <div class="cmd_artical">非常喜歡 AI工具王 提供的 AI 模型租賃服務，使用起來非常方便，而且效果非常好。對於我們公司的業務來說，這個服務非常重要，因為我們需要大量的數據進行分析和預測，AI工具王 提供的 AI 模型能夠幫助我們節省大量時間和成本，實在是太棒了！</div>
+              <div class="custumer"><img class="cust" src="./wang_img/avatar3.png" alt="">
+                <div class="info">
+                  <div class="info_name">陳小姐</div>
+                  <div class="info_company">ABC科技有限公司</div>
+                </div>
+              </div>
+            </div>
+            <div class="card1">
+              <div class="star">⭐️⭐️⭐️⭐️⭐️</div>
+              <div class="cmd_artical">作為一家醫療器材公司，我們非常關注人工智能技術的應用，而 AI工具王 提供的 AI 模型租賃服務為我們帶來了很大的幫助。我們使用 AI工具王 的模型進行醫學影像分析和預測，這些模型非常精確，能夠幫助我們更好地診斷病情，提高治療效果。感謝 AI工具王 團隊的辛勤工作！</div>
+              <div class="custumer"><img class="cust" src="./wang_img/avatar1.png" alt="">
+                <div class="info">
+                  <div class="info_name">劉小姐</div>
+                  <div class="info_company">XYZ 醫療器材有限公司</div>
+                </div>
+              </div>
+            </div>
+            <div class="card1">
+              <div class="star">⭐️⭐️⭐️⭐️⭐️</div>
+              <div class="cmd_artical">我們銀行一直在尋找能夠幫助我們提高風險控制和客戶服務的解決方案，而 AI工具王 提供的 AI 模型租賃服務正好滿足了我們的需求。我們使用 AI工具王 的模型進行客戶信用評估和詐騙檢測等任務，這些模型非常準確，能夠幫助我們更好地控制風險，提高客戶滿意度。非常感謝 AI工具王 團隊的支持！建立智能化的聊天機器人，解答常見問題、提供客戶支援、收集反饋等。</div>
+              <div class="custumer"><img class="cust" src="./wang_img/avatar2.png" alt="">
+                <div class="info">
+                  <div class="info_name">黃先生</div>
+                  <div class="info_company">XYZ 醫療器材有限公司</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="arrow prev">&lt;</div>
+          <div class="arrow next">&gt;</div>
+        </div>
+      </div>
+    </div>
+    <div class="section section_application"> 
+      <div class="container">
+        <div class="app_title">這些超酷的應用，都來自 AI工具王</div>
+        <div class="app_search"><i class="fas fa-search"></i>
+          <input class="form-control" type="text" placeholder="輸入關鍵字搜尋">
+        </div>
+        <div class="app_nav">
+          <div class="btn_select">篩選<span> <i class="fas fa-filter"></i></span></div>
+          <div class="nav_bar"> 
+            <div class="bar bar1"> 全部</div>
+            <div class="bar">聊天</div>
+            <div class="bar bar3">影像辨識</div>
+            <div class="bar">翻譯</div>
+            <div class="bar">行銷</div>
+            <div class="bar">客服</div>
+            <div class="bar bar7">生產力</div>
+          </div>
+          <div class="btn_new">由新到舊<span> <i class="fas fa-chevron-down"></i></span></div>
+        </div>
+        <div class="portfolio_item" id="portfolio">
+          <div class="container">
+            <div class="experience pf">
+              <div class="itembox" v-for="cls in portfolio_list">
+                <div class="top">
+                  <div class="picture" v-bind:style="'background-image:url('+cls.img+')'"></div>
+                </div>
+                <div class="bottom">
+                  <div class="portfolio">
+                    <p class="n1">{{cls.name}}</p>
+                    <p class="subscript">{{cls.descript}} </p>
+                  </div>
+                  <div class="class"> 
+                    <div class="style">{{cls.style}}  </div>
+                    <div class="author">{{cls.author}} </div>
+                  </div>
+                  <div class="hash_tag"> 
+                    <p class="tag">{{cls.tag}} </p><i class="fas fa-share-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pagination"> 
+              <div class="page-item num1">1</div>
+              <div class="page-item">2</div>
+              <div class="page-item">3</div>
+              <div class="page-item">4</div>
+              <div class="page-item">5</div>
+              <div class="page-item"> <i class="fas fa-chevron-right"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section section_startuse"> 
+      <div class="container"> 
+        <div class="st_title"> 現在就來建立屬於你的服務吧</div>
+        <div class="st_btn"> 
+          <p>開始使用</p><img class="st_icon" src="./wang_img/icons/call_made.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="footer"> 
+      <div class="container">
+        <div class="ft_info">
+          <div class="f_btn">
+            <a class="ft home" href="./index.html">首頁</a>
+            <a class="ft price" href="./index_price.html">定價</a>
+          </div><img class="logo" src="./wang_img/logo.png" alt="">
+        </div>
+        <div class="pravicy">
+          <div class="social">
+            <div class="social_logo">AI工具王 © 2023 </div>
+            <div class="social_icon"> 
+              <div class="fb">Facebook </div>
+              <div class="tw">Twitter</div>
+              <div class="ig">Instagram</div>
+            </div>
+          </div>
+          <div class="pv_btn"> 
+            <p>Back to top</p><span> <i class="fas fa-arrow-up"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.5/vue.js"> </script>
+    <script src="./index.js"> </script>
+  </body>
+</html>
