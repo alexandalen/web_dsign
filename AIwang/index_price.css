@@ -64,7 +64,7 @@ body {
 }
 @media (max-width: 600px) {
   .header {
-    max-width: 372px;
+    max-width: 373px;
   }
 }
 .header .container {
@@ -186,7 +186,7 @@ body {
 }
 @media (max-width: 600px) {
   .section_top {
-    max-width: 372px;
+    max-width: 373px;
   }
 }
 .section_top .container {
@@ -298,7 +298,7 @@ body {
 }
 @media (max-width: 600px) {
   .section_serve {
-    max-width: 372px;
+    max-width: 373px;
   }
 }
 .section_serve .container {
@@ -457,7 +457,7 @@ body {
 }
 @media (max-width: 600px) {
   .section_coworker {
-    max-width: 372px;
+    max-width: 373px;
   }
 }
 .section_coworker .container {
@@ -534,7 +534,7 @@ body {
 }
 @media (max-width: 600px) {
   .section_application {
-    max-width: 372px;
+    max-width: 373px;
     border-radius: 20px;
   }
 }
@@ -839,7 +839,7 @@ body {
 }
 @media (max-width: 600px) {
   .section_startuse {
-    max-width: 372px;
+    max-width: 373px;
   }
 }
 .section_startuse .container {
@@ -982,7 +982,7 @@ body {
 }
 @media (max-width: 600px) {
   .footer {
-    max-width: 568px;
+    max-width: 373px;
   }
 }
 .footer .container {
