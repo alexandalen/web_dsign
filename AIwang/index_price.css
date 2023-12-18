@@ -102,7 +102,6 @@ body #dev {
   color: white;
   line-height: 48ox;
   cursor: pointer;
-  text-decoration: none;
 }
 @media (max-width: 1199px) {
   .header .container .home, .header .container .price {
@@ -1032,10 +1031,6 @@ body #dev {
     font-weight: 700;
     margin-top: 40px;
   }
-}
-.ft {
-  color: white;
-  text-decoration: none;
 }
 .footer .container .ft_info .logo {
   margin-top: 80px;
