@@ -60,9 +60,9 @@ body #dev {
   max-width: 1920px;
   background-color: black;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .header {
-    max-width: 568px;
+    max-width: 372px;
   }
 }
 .header .container {
@@ -83,7 +83,7 @@ body #dev {
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .header .container .h_btn {
     justify-content: flex-end;
   }
@@ -93,7 +93,7 @@ body #dev {
   flex-direction: column;
   display: none;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .header .container .h_hamber {
     display: block;
   }
@@ -103,7 +103,7 @@ body #dev {
   line-height: 48ox;
   cursor: pointer;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .header .container .home, .header .container .price {
     display: none;
   }
@@ -111,7 +111,7 @@ body #dev {
 .header .container .logo, .header .container .h_btn {
   margin-top: 20px;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .header .container {
     max-width: 414px;
   }
@@ -125,7 +125,7 @@ body #dev {
 .dropdown {
   display: none;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .dropdown {
     margin-top: 35px;
     border-radius: 16px;
@@ -181,9 +181,9 @@ body #dev {
   max-width: 1920px;
   background-color: black;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .section_top {
-    max-width: 568px;
+    max-width: 372px;
   }
 }
 .section_top .container {
@@ -195,7 +195,7 @@ body #dev {
   flex-direction: column;
   justify-content: space-evenly;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .section_top .container {
     max-width: 351px;
     height: 811px;
@@ -217,7 +217,7 @@ body #dev {
   font-size: 120px;
   font-weight: 700;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .section_top .container .title p {
     font-size: 48px;
     font-weight: 700;
@@ -232,7 +232,7 @@ body #dev {
   align-self: flex-end;
   margin-right: -350px;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .section_top .container .title .t_btn {
     width: 257px;
     height: auto;
@@ -251,7 +251,7 @@ body #dev {
   height: 180px;
   animation: move_top 3s linear infinite;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .section_top .container .animation_pic .t_pic1, .section_top .container .animation_pic .t_pic2, .section_top .container .animation_pic .t_pic3 {
     width: 117px;
     height: 117px;
@@ -288,9 +288,9 @@ body #dev {
   max-width: 1920px;
   background-color: black;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .section_serve {
-    max-width: 568px;
+    max-width: 372px;
   }
 }
 .section_serve .container {
@@ -303,7 +303,7 @@ body #dev {
   flex-direction: column;
   justify-content: space-between;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .section_serve .container {
     max-width: 351px;
     height: 1044px;
@@ -314,7 +314,7 @@ body #dev {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .section_serve .container .artical {
     display: flex;
     flex-direction: column;
@@ -327,7 +327,7 @@ body #dev {
   width: 414px;
   height: 38px;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .section_serve .container .artical .art1 {
     font-size: 20px;
     font-weight: 700;
@@ -341,7 +341,7 @@ body #dev {
   flex-wrap: wrap;
   margin-top: 80px;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .section_serve .container .serve {
     display: flex;
     flex-direction: column;
@@ -358,7 +358,7 @@ body #dev {
   border-radius: 16px;
   justify-content: space-between;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .section_serve .container .serve .serve1, .section_serve .container .serve .serve2, .section_serve .container .serve .serve3, .section_serve .container .serve .serve4 {
     width: 351px;
     height: 240px;
@@ -367,7 +367,7 @@ body #dev {
     justify-content: space-between;
   }
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .section_serve .container .serve .serve2 {
     margin-top: 12px;
   }
@@ -375,7 +375,7 @@ body #dev {
 .section_serve .container .serve .serve3 {
   margin-top: 24px;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .section_serve .container .serve .serve3 {
     margin-top: 12px;
   }
@@ -383,7 +383,7 @@ body #dev {
 .section_serve .container .serve .serve4 {
   margin-top: 24px;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .section_serve .container .serve .serve4 {
     margin-top: 12px;
   }
@@ -414,7 +414,7 @@ body #dev {
   font-weight: 400;
   color: #919191;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .section_serve .container .serve .sub_t1 {
     margin-left: 20px;
   }
@@ -427,7 +427,7 @@ body #dev {
   font-size: 32px;
   font-weight: 700;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .section_serve .container .serve .sub_t {
     margin-left: 20px;
   }
@@ -442,14 +442,14 @@ body #dev {
   background-color: black;
   margin-top: 320px;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .section_coworker {
     margin-top: 120px;
   }
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .section_coworker {
-    max-width: 568px;
+    max-width: 372px;
   }
 }
 .section_coworker .container {
@@ -460,7 +460,7 @@ body #dev {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .section_coworker .container {
     max-width: 351px;
     height: 570px;
@@ -472,7 +472,7 @@ body #dev {
   font-size: 32px;
   font-weight: 700;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .section_coworker .container .worker_title {
     font-size: 20px;
     font-weight: 700;
@@ -485,7 +485,7 @@ body #dev {
   flex-direction: column;
   justify-content: space-between;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .section_coworker .container .worker_rule {
     width: 351px;
     height: 498px;
@@ -498,7 +498,7 @@ body #dev {
   font-size: 48px;
   font-weight: 700;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .section_coworker .container .rule1 {
     font-size: 32px;
     font-weight: 700;
@@ -510,7 +510,7 @@ body #dev {
   margin-top: 24px;
   margin-bottom: 40px;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .section_coworker .container .rule2 {
     font-size: 16px;
     font-weight: 400;
@@ -524,9 +524,9 @@ body #dev {
   border-radius: 160px;
   margin-top: 153px;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .section_application {
-    max-width: 568px;
+    max-width: 372px;
     border-radius: 20px;
   }
 }
@@ -539,12 +539,13 @@ body #dev {
   flex-direction: column;
   align-items: center;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .section_application .container {
     max-width: 351px;
     height: 1192px;
     justify-content: space-evenly;
     height: 4046px;
+    overflow: hidden;
   }
 }
 .section_application .container .app_title {
@@ -554,7 +555,7 @@ body #dev {
   font-size: 32px;
   font-weight: 700;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .section_application .container .app_title {
     margin-top: 450px;
   }
@@ -595,7 +596,7 @@ body #dev {
   align-items: center;
   margin-top: 24px;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .section_application .container .app_nav {
     display: flex;
     flex-direction: column;
@@ -623,7 +624,7 @@ body #dev {
   align-items: center;
   color: #919191;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .section_application .container .app_nav .nav_bar {
     margin-top: 16px;
   }
@@ -664,7 +665,7 @@ body #dev {
 .section_application .container .app_nav .btn_new .fa-chevron-down {
   margin-left: 12px;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .section_application .container .app_nav .btn_new {
     align-self: flex-end;
     margin-top: -123px;
@@ -678,7 +679,7 @@ body #dev {
   flex-wrap: wrap;
   margin-top: 40px;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .section_application .container .portfolio_item .container .pf {
     height: 3450px;
     display: flex;
@@ -696,7 +697,7 @@ body #dev {
   border-radius: 5px;
   cursor: pointer;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .section_application .container .portfolio_item .container .pf .itembox {
     width: 351px;
     height: 558px;
@@ -759,7 +760,7 @@ body #dev {
   width: 352px;
   height: 42px;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .section_application .container .portfolio_item .container .pf .bottom .subscript {
     width: 287px;
     height: 42px;
@@ -795,7 +796,7 @@ body #dev {
   justify-content: space-between;
   align-self: flex-end;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .section_application .container .portfolio_item .container .pagination {
     margin-top: -340px;
   }
@@ -807,7 +808,7 @@ body #dev {
   text-align: center;
   line-height: 48px;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .section_application .container .portfolio_item .container .pagination .page-item {
     margin-top: 0;
   }
@@ -828,9 +829,9 @@ body #dev {
   max-width: 1920px;
   background-color: black;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .section_startuse {
-    max-width: 568px;
+    max-width: 372px;
   }
 }
 .section_startuse .container {
@@ -843,7 +844,7 @@ body #dev {
   justify-content: space-between;
   align-items: flex-start;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .section_startuse .container {
     display: flex;
     flex-direction: column;
@@ -856,7 +857,7 @@ body #dev {
   font-size: 48px;
   font-weight: 700;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .section_startuse .container .st_title {
     font-size: 20px;
     font-weight: 700;
@@ -871,7 +872,7 @@ body #dev {
   flex-direction: column;
   justify-content: space-between;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .section_startuse .container .st_btn {
     row-gap: 12px;
     display: flex;
@@ -889,7 +890,7 @@ body #dev {
   width: 856px;
   height: auto;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .section_startuse .container .dropdown {
     max-width: 430px;
     display: flex;
@@ -917,7 +918,7 @@ body #dev {
   display: flex;
   flex-direction: column;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .section_startuse .container .dropdown .dropdown-content {
     width: 351px;
     height: auto;
@@ -934,7 +935,7 @@ body #dev {
   font-size: 16px;
   font-weight: 400;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .section_startuse .container .dropdown .dropdown-content p {
     padding: 10px 0px;
     font-size: 16px;
@@ -970,7 +971,7 @@ body #dev {
   max-width: 1920px;
   background-color: black;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .footer {
     max-width: 568px;
   }
@@ -984,7 +985,7 @@ body #dev {
   align-items: center;
   height: 440px;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .footer .container {
     max-width: 351px;
     height: 512px;
@@ -1001,7 +1002,7 @@ body #dev {
   color: white;
   border-top: 1px solid white;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .footer .container .ft_info {
     width: 100%;
     height: 360px;
@@ -1025,7 +1026,7 @@ body #dev {
   font-weight: 700;
   cursor: pointer;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .footer .container .ft_info .f_btn {
     font-size: 48px;
     font-weight: 700;
@@ -1042,7 +1043,7 @@ body #dev {
   justify-content: space-between;
   border-top: 1px solid white;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .footer .container .pravicy {
     width: 100%;
     height: 148px;
@@ -1059,7 +1060,7 @@ body #dev {
   font-size: 16px;
   font-weight: 700;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .footer .container .pravicy .social {
     display: flex;
     flex-direction: column;
@@ -1075,7 +1076,7 @@ body #dev {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .footer .container .pravicy .social .social_icon {
     width: 254px;
     height: 48px;
@@ -1094,7 +1095,7 @@ body #dev {
   justify-content: space-evenly;
   cursor: pointer;
 }
-@media (max-width: 1199px) {
+@media (max-width: 434px) {
   .footer .container .pravicy .pv_btn {
     line-height: 48px;
   }
