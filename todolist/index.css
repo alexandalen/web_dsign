@@ -1,0 +1,222 @@
+/* css reset */
+html, body, div, span, applet, object, iframe, h1, h2,
+h3, h4, h5, h6, p, blockquote, pre, del, dfn, em, img, ins, kbd,
+q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption, footer,
+header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer,
+header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Baloo Thambi 2", system-ui;
+  position: relative;
+  color: #f2efe7;
+  background-image: url("./todo_img/bgc.png");
+  background-size: cover;
+  height: 696px;
+}
+
+.header {
+  width: 100%;
+  max-width: 1320px;
+}
+.header .header_container {
+  padding: 0px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  height: 80px;
+  background-color: transparent;
+}
+.header .header_container .logo {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.header .header_container .logo .logoimg {
+  width: 320px;
+  height: 50px;
+}
+.header .header_container .header_btn {
+  display: flex;
+  width: 184px;
+  height: 50px;
+}
+.header .header_container .header_btn .user {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 40px;
+  color: #574200;
+}
+.header .header_container .header_btn .login {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: #574200;
+}
+.header .header_container .header_btn .login:hover {
+  color: #fffbf2;
+  cursor: pointer;
+}
+
+.todo {
+  max-width: 1320px;
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+.todo .container {
+  width: 664px;
+}
+.todo .container .search {
+  display: flex;
+  justify-content: center;
+}
+.todo .container .search .form-control {
+  width: 558px;
+  margin-right: 10px;
+  flex-grow: 1;
+}
+.todo .container .search .form-control::placeholder {
+  color: #C6C6C6;
+}
+.todo .container .search .btn {
+  background-color: #584400;
+  color: #FFFBF2;
+  padding: 8px 16px;
+  flex-grow: 1;
+  border: none;
+  border-radius: 8px;
+}
+.todo .container .search .btn:hover {
+  cursor: pointer;
+  color: #574200;
+  background-color: #fffbf2;
+}
+.todo .container .todopage, .todo .container .todolist {
+  width: 664px;
+}
+.todo .container .todopage {
+  margin-top: 40px;
+  border-radius: 8px 4px 0px 0px;
+  display: flex;
+  background-color: rgba(255, 251, 242, 0.5);
+}
+.todo .container .todopage .all, .todo .container .todopage .waiting, .todo .container .todopage .finish {
+  color: #574200;
+  padding: 8px 30px;
+  font-size: 16;
+  font-weight: 700;
+}
+.todo .container .todopage .all:hover, .todo .container .todopage .waiting:hover, .todo .container .todopage .finish:hover {
+  cursor: pointer;
+}
+.todo .container .todopage .all {
+  background-color: #fffbf2;
+  border-radius: 4px 4px 0px 0px;
+}
+.todo .container .todopage .waiting, .todo .container .todopage .finish {
+  color: #B08C00;
+}
+.todo .container .todolist {
+  background-color: #fffbf2;
+  border-radius: 0px 0px 8px 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 41, 0.15);
+}
+.todo .container .todolist .todocontain {
+  padding: 24px;
+}
+.todo .container .todolist .todocontain .list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 12px;
+  border-bottom: 1px solid #5e5e5e;
+}
+.todo .container .todolist .todocontain .list1 {
+  border-top: 1px solid #5e5e5e;
+}
+.todo .container .todolist .todocontain i {
+  color: #574200;
+  font-size: 16px;
+  font-weight: 400;
+}
+.todo .container .todolist .todocontain i:hover {
+  cursor: pointer;
+}
+.todo .container .todolist .todocontain .checkbox, .todo .container .todolist .todocontain .edit {
+  display: flex;
+  align-items: center;
+}
+.todo .container .todolist .todocontain .checkbox .cont {
+  color: #574200;
+  margin-left: 8px;
+}
+.todo .container .todolist .todocontain .edit {
+  display: flex;
+  align-items: center;
+}
+.todo .container .todolist .todocontain .edit .bi.bi-pencil {
+  margin-left: 16px;
+}
+.todo .container .todolist .todocontain .cont2 {
+  text-decoration-line: line-through;
+}
+.todo .container .todolist .todocontain .list6 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+.todo .container .todolist .todocontain .cont3 {
+  font-weight: 700;
+}
+.todo .container .todolist .todocontain .cont3_1 {
+  font-weight: 400;
+}
+.todo .container .todolist .todocontain .cont4 {
+  color: #574200;
+}
+.todo .container .todolist .todocontain .cont4:hover {
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+.todo .container .completed {
+  text-decoration: line-through;
+}

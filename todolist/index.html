@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400..800&amp;family=Noto+Sans+TC:wght@100..900&amp;display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app">
+      <div class="header"> 
+        <div class="header_container">
+          <div class="logo"><img class="logoimg" src="./todo_img/logo.png" alt=""></div>
+          <div class="header_btn">
+            <div class="user">王小明的代辦</div>
+            <div class="login">登出</div>
+          </div>
+        </div>
+      </div>
+      <div class="todo"> 
+        <div class="container">
+          <div class="search">
+            <input class="form-control" type="text" v-model="text" placeholder="新增待辦事項">
+            <button class="btn" type="button" @click="addItem">新增</button>
+          </div>
+          <div class="todopage">
+            <div class="all" :class="{active: isactive=== '全部項目'}" @click="isactive = '全部項目' " :style="allStyle">全部項目</div>
+            <div class="waiting" :class="{active: isactive=== '待完成項目'}" @click="isactive = '待完成項目' " :style="waitingStyle">待完成項目</div>
+            <div class="finish" :class="{active: isactive=== '完成項目'}" @click="isactive = '完成項目' " :style="finishStyle">完成項目</div>
+          </div>
+          <div class="todolist">
+            <div class="todocontain" v-if="isactive === '全部項目'">
+              <div class="list list1" v-for="item in data" :key="item.id">
+                <div class="checkbox"><i :class="getIconClass(item)" @click="toggleIcon(item)"></i>
+                  <p class="cont" :class="{'completed': item.completed, 'editing': editingItem === item}">{{ editingItem === item ? '' : item.text }}
+                    <input class="edit-input" v-if="editingItem === item" type="text" v-model="item.text" @keyup.enter="finishEditing(item)" @blur="finishEditing(item)">
+                  </p>
+                </div>
+                <div class="edit"><i class="bi bi-trash" @click="removeItem(item)"></i><i class="bi bi-pencil" @click.stop="startEditing(item)"></i></div>
+              </div>
+              <div class="list6">
+                <div class="checkbox">
+                  <p class="cont cont3">{{sumItem}} <span class="cont3_1">個待完成事項</span></p>
+                </div>
+                <div class="edit">
+                  <p class="cont cont4" @click="removeItemAll">清除已完成項目</p>
+                </div>
+              </div>
+            </div>
+            <div class="todocontain none" v-if="isactive === '待完成項目'">
+              <div class="list list1" v-for="item in filterData" :key="item.id">
+                <div class="checkbox"><i :class="getIconClass(item)" @click="toggleIcon(item)"></i>
+                  <p class="cont" :class="{'completed': item.completed, 'editing': editingItem === item}">{{ editingItem === item ? '' : item.text }}
+                    <input class="edit-input" v-if="editingItem === item" type="text" v-model="item.text" @keyup.enter="finishEditing(item)" @blur="finishEditing(item)">
+                  </p>
+                </div>
+                <div class="edit"><i class="bi bi-trash" @click="removeItem(item)"></i><i class="bi bi-pencil" @click.stop="startEditing(item)"></i></div>
+              </div>
+              <div class="list6">
+                <div class="checkbox">
+                  <p class="cont cont3">{{sumItem}} <span class="cont3_1">個待完成事項</span></p>
+                </div>
+                <div class="edit">
+                  <p class="cont cont4" @click="removeItemAll">清除已完成項目</p>
+                </div>
+              </div>
+            </div>
+            <div class="todocontain finish" v-if="isactive === '完成項目'">
+              <div class="list list1" v-for="item in filterData1" :key="item.id">
+                <div class="checkbox"><i :class="getIconClass(item)" @click="toggleIcon(item)"></i>
+                  <p class="cont" :class="{'completed': item.completed, 'editing': editingItem === item}">{{ editingItem === item ? '' : item.text }}
+                    <input class="edit-input" v-if="editingItem === item" type="text" v-model="item.text" @keyup.enter="finishEditing(item)" @blur="finishEditing(item)">
+                  </p>
+                </div>
+                <div class="edit"><i class="bi bi-trash" @click="removeItem(item)"></i><i class="bi bi-pencil" @click.stop="startEditing(item)"></i></div>
+              </div>
+              <div class="list6">
+                <div class="checkbox">
+                  <p class="cont cont3">{{sumItem1}} <span class="cont3_1">個完成事項</span></p>
+                </div>
+                <div class="edit">
+                  <p class="cont cont4" @click="removeItemAll">清除已完成項目</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./index.js"> </script>
+  </body>
+</html>
