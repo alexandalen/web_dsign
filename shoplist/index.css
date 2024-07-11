@@ -1,0 +1,365 @@
+@charset "UTF-8";
+* {
+  position: relative;
+  font-family: 微軟正黑體;
+  vertical-align: top;
+  letter-spacing: 1.5px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f3f3f1;
+}
+
+.itembox {
+  width: 290px;
+  background-color: white;
+  color: #4F4C4B;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 30px 15px;
+  display: inline-block;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+}
+.itembox:hover .bookbtn {
+  bottom: 10px;
+}
+.itembox:hover .picture {
+  transform: scale(1.13);
+}
+
+.top {
+  height: 160px;
+  overflow: hidden;
+}
+.top .picture {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("https://img.onl/PTYVA7");
+  background-size: cover;
+  left: 0;
+  top: 0;
+  transition: 0.3s;
+  border-radius: 5px 5px 0px 0px;
+}
+.top .bookbtn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  position: absolute;
+  left: 15px;
+  bottom: -50px;
+  background-color: #fff;
+  color: #EB5E00;
+  cursor: pointer;
+  transition: bottom 0.3s;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+}
+.top .bookbtn i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
+}
+.top .bookbtn:hover {
+  background-color: #EB5E00;
+  color: white;
+}
+
+.bottom {
+  height: 100px;
+  padding: 15px;
+  text-align: center;
+}
+.bottom .title {
+  font-size: 25px;
+}
+.bottom .price {
+  font-size: 15px;
+}
+.bottom .price:before {
+  content: "NT ";
+}
+.bottom .price:after {
+  content: " $";
+}
+.bottom .orangebar {
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-color: #EB5E00;
+  border-radius: 0px 0px 5px 5px;
+}
+
+#shop {
+  filter: bringtness(100%);
+  background-color: #F4EDDA;
+}
+#shop .header, #shop .header_t {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  margin-left: -165px;
+  margin-top: 0;
+  background-color: #55371b;
+  color: #eee;
+}
+#shop .header_t {
+  margin-top: -22px;
+  padding-bottom: 20px;
+}
+
+#shopcart {
+  filter: bringtness(100%);
+  position: fixed;
+  width: 25%;
+  min-width: 280px;
+  right: 5px;
+  top: 135px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+}
+#shopcart .cartitle1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#shopcart .cartitle1 svg {
+  fill: #DEBAA2;
+  display: inline-block;
+}
+#shopcart .cartitle1 .cartitle2 {
+  display: inline-block;
+  margin-left: 10px;
+  color: #B58D29;
+  font-weight: 500;
+  font-size: 22px;
+}
+#shopcart #listitemPanel {
+  padding: 10px;
+  max-height: 400px;
+  overflow-y: scroll;
+}
+#shopcart #listitemPanel::-webkit-scrollbar {
+  width: 5px;
+}
+#shopcart #listitemPanel::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+#shopcart #listitemPanel::-webkit-scrollbar-thumb {
+  background: #938C8A;
+  border-radius: 10px;
+}
+#shopcart #listitemPanel::-webkit-scrollbar-thumb:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+#shopcart #listitemPanel .buy-item {
+  list-style: none;
+  padding: 5px 15px;
+  margin-top: 5px;
+  color: #938C8A;
+}
+#shopcart #listitemPanel .total {
+  background-color: #F4EDDA;
+  color: #B59D29;
+  border-radius: 10px;
+  font-weight: 600;
+}
+#shopcart #listitemPanel .price {
+  display: inline-block;
+  position: absolute;
+  right: 50px;
+  padding: 0 8px;
+}
+#shopcart #listitemPanel .price::after {
+  content: "$";
+}
+#shopcart #listitemPanel .delbtn {
+  display: inline-block;
+  position: absolute;
+  right: 15px;
+  padding: 0 5px;
+  cursor: pointer;
+  background-color: #938C8A;
+  color: #eee;
+  font-weight: 600;
+  border-radius: 5px;
+}
+#shopcart #listitemPanel .delbtn:hover {
+  background-color: #FFDA71;
+  color: #EB5E00;
+  cursor: pointer;
+}
+#shopcart .clearbtn {
+  display: inline-block;
+  margin: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #B58D29;
+  color: #eee;
+  font-weight: 600;
+}
+#shopcart .purchasebtn {
+  display: inline-block;
+  margin: 10px;
+  position: absolute;
+  right: 0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #B58D29;
+  color: #eee;
+  font-weight: 600;
+}
+#shopcart .clearbtn:hover, #shopcart .purchasebtn:hover {
+  background-color: #552718;
+  color: #92AED9;
+  cursor: pointer;
+}
+
+#confirmBox {
+  list-style: none;
+  margin: 10px 0px 0px -20px;
+  padding: 15px 15px 10px 15px;
+  width: 300px;
+  height: 320px;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  background-color: #fff;
+  border-radius: 10px;
+  color: #938C8A;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+#confirmBox .cancle {
+  display: grid;
+  place-content: center;
+  position: fixed;
+  top: 1%;
+  right: 1%;
+  z-index: 10;
+  border-radius: 10px;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #eee;
+  background-color: #938C8A;
+  border: solid 2px #eee;
+}
+#confirmBox .cancle:hover {
+  color: #938C8A;
+  background-color: #eee;
+  border: solid 2px #938C8A;
+  cursor: pointer;
+}
+#confirmBox .confirm_T {
+  display: flex;
+  justify-content: center;
+  background-color: #938C8A;
+  color: #eee;
+  padding: 20px 0;
+  margin: -15px -15px 5px -15px;
+  border-radius: 10px 10px 0 0;
+}
+#confirmBox hr {
+  border: solid 2px #938C8A;
+}
+#confirmBox #sumPrice {
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 5px 15px;
+}
+#confirmBox #totalPrice {
+  font-size: 20px;
+  margin: 15px 0;
+  background-color: #938C8A;
+  color: #eee;
+  border-radius: 10px;
+  padding: 5px 15px;
+}
+#confirmBox .transport {
+  padding: 5px 15px;
+}
+#confirmBox .confirm_price {
+  display: inline-block;
+  position: absolute;
+  right: 50px;
+  padding: 0 8px;
+}
+#confirmBox .confirm_price::after {
+  content: "$";
+}
+#confirmBox .pay {
+  padding: 5px 15px;
+  font-weight: 600;
+}
+#confirmBox fieldset {
+  padding: 5px 15px;
+}
+#confirmBox .box1, #confirmBox .box2 {
+  display: inline-block;
+  margin-right: 20px;
+}
+#confirmBox input {
+  display: inline-block;
+  width: 10px;
+  height: 12px;
+  border-radius: 100%;
+  accent-color: #938C8A;
+  border: solid 1.5px;
+}
+#confirmBox input:hover, #confirmBox label:hover {
+  cursor: pointer;
+}
+#confirmBox label {
+  display: inline-block;
+  font-size: 14px;
+}
+#confirmBox .confirmbtn {
+  font-weight: 600;
+  font-size: 18px;
+  margin: 20px 90px;
+  padding: 5px;
+  border-radius: 8px;
+  text-align: center;
+  border: solid 2px #938C8A;
+  background-color: #938C8A;
+  color: #eee;
+}
+#confirmBox .confirmbtn:hover {
+  background-color: #eee;
+  color: #938C8A;
+  border: solid 2px #938C8A;
+  cursor: pointer;
+}
+#confirmBox #conMsg {
+  z-index: 110;
+  font-size: 12px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 -15px -15px -15px;
+  border-radius: 0 0 10px 10px;
+  background-color: #938C8A;
+  color: #eee;
+}
+#confirmBox #conMsg span {
+  font-size: 16px;
+  font-weight: 600;
+}

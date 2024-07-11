@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    <link href="	https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet">
+  </head>
+  <body></body>
+  <div id="shop">
+    <h1 class="header">Case Service Item </h1>
+    <h5 class="header_t">We can provide the Project style to you</h5>
+    <div id="shop_item">
+      <div class="container">
+        <div class="col-md-9">
+          <div class="itembox" v-for="cls in shoplist">
+            <div class="top">
+              <div class="picture" v-bind:style="'background-image:url('+cls.img+')'"></div>
+              <div class="bookbtn"><i class="fa fa-cart-plus"></i></div>
+            </div>
+            <div class="bottom">
+              <h1 class="title">{{cls.name}}</h1>
+              <div class="price">{{cls.price}}</div>
+              <div class="orangebar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="shopcart">
+    <div class="cartitle1">
+      <!--製作購物車svg-->
+      <svg viewbox="0 0 576 512" width="28" title="shopping-cart">
+        <path d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"></path>
+      </svg>
+      <h3 class="cartitle2">My Shop Cart</h3>
+    </div>
+    <div id="listitemPanel">
+      <div id="listitem">
+        <li class="buy-item">home
+          <div class="price">555</div>
+          <div class="delbtn">x</div>
+        </li>
+        <li class="buy-item">home
+          <div class="price">555</div>
+          <div class="delbtn">x</div>
+        </li>
+        <li class="buy-item">Total
+          <div class="price">1010</div>
+        </li>
+      </div>
+      <div class="clearbtn">Clear</div>
+      <div class="purchasebtn">Purchase</div>
+    </div>
+  </div>
+  <!--confirm 訊息-->
+  <div id="confirmBox">
+    <div class="cancle">x</div>
+    <h2 class="confirm_T">Payment Bill</h2>
+    <div id="sumPrice"></div>
+    <div class="transport">
+      <li>Tax Fee
+        <div class="confirm_price">30</div>
+      </li>
+    </div>
+    <div id="totalPrice"></div>
+    <hr>
+    <fieldset>
+      <legend class="pay">Payment Method</legend>
+      <div class="box1">
+        <input class="box" type="radio" id="card" value="card" name="payment">
+        <label for="card">Credit Card</label>
+      </div>
+      <div class="box2">
+        <input class="box" type="radio" id="cash" value="cash" name="payment">
+        <label for="cash">Cash</label>
+      </div>
+    </fieldset>
+    <div class="confirmbtn">Confirm</div>
+    <hr>
+    <!--confirm message-->
+    <div id="conMsg">We had received your order!<br><br><span>Thank You!</span>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.5/vue.js"> </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"> </script><script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+      <script src="./index.js"> </script>
+    </div>
+  </div>
+</html>
