@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./Todo_list.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400..800&amp;family=Noto+Sans+TC:wght@100..900&amp;display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
     <div id="app">
       <div class="header"> 
         <div class="header_container">
-          <div class="logo"><img class="logoimg" src="./todo_img/logo.png" alt=""></div>
+          <div class="logo"><img class="logoimg" src="../todo_img/logo.png" alt=""></div>
           <div class="header_btn">
             <div class="user">王小明的代辦</div>
             <div class="login">登出</div>
@@ -31,7 +31,7 @@
             <div class="waiting" :class="{active: isactive=== '待完成項目'}" @click="isactive = '待完成項目' " :style="waitingStyle">待完成項目</div>
             <div class="finish" :class="{active: isactive=== '完成項目'}" @click="isactive = '完成項目' " :style="finishStyle">完成項目</div>
           </div>
-          <div class="todolist">
+          <div class="todolist" v-if="data.length &gt; 0">
             <div class="todocontain" v-if="isactive === '全部項目'">
               <div class="list list1" v-for="item in data" :key="item.id">
                 <div class="checkbox"><i :class="getIconClass(item)" @click="toggleIcon(item)"></i>
@@ -87,11 +87,12 @@
               </div>
             </div>
           </div>
+          <div class="todolist empty" v-else></div>
         </div>
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="./index.js"> </script>
+    <script src="./Todo_list_vue.js"> </script>
   </body>
 </html>
