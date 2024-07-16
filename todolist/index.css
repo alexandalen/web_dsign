@@ -48,7 +48,7 @@ body {
   font-family: "Baloo Thambi 2", system-ui;
   position: relative;
   color: #f2efe7;
-  background-image: url("../todo_img/bgc.png");
+  background-image: url("./todo_img/bgc.png");
   background-size: cover;
   height: 696px;
 }
@@ -218,7 +218,7 @@ body {
   cursor: pointer;
 }
 .todo .container .empty {
-  background-image: url("../todo_img/empty.png");
+  background-image: url("./todo_img/empty.png");
   background-size: cover;
   width: 520px;
   height: 456px;
