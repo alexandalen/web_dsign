@@ -48,7 +48,7 @@ body {
   font-family: "Baloo Thambi 2", system-ui;
   position: relative;
   color: #f2efe7;
-  background-image: url("./todo_img/bgc.png");
+  background-image: url("../todo_img/bgc.png");
   background-size: cover;
   height: 696px;
 }
@@ -155,6 +155,9 @@ body {
 .todo .container .todopage .waiting, .todo .container .todopage .finish {
   color: #B08C00;
 }
+.todo .container .dphidden {
+  display: none !important;
+}
 .todo .container .todolist {
   background-color: #fffbf2;
   border-radius: 0px 0px 8px 8px;
@@ -218,7 +221,7 @@ body {
   cursor: pointer;
 }
 .todo .container .empty {
-  background-image: url("./todo_img/empty.png");
+  background-image: url("../todo_img/empty.png");
   background-size: cover;
   width: 520px;
   height: 456px;

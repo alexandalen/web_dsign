@@ -1,0 +1,157 @@
+/* css reset */
+html, body, div, span, applet, object, iframe, h1, h2,
+h3, h4, h5, h6, p, blockquote, pre, del, dfn, em, img, ins, kbd,
+q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption, footer,
+header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer,
+header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Baloo Thambi 2", system-ui;
+  position: relative;
+  color: #584400;
+  background-color: #fffbf2;
+  height: 810px;
+}
+
+.container {
+  max-width: 1320px;
+  height: 810px;
+  margin: 0px 12px;
+  display: flex;
+}
+.container .login_right {
+  width: 59.3%;
+  height: 100%;
+}
+.container .login_right .login {
+  width: 100%;
+  height: 100%;
+}
+.container .login_left {
+  width: 40.7%;
+  height: 100%;
+  background-color: #ffce26;
+}
+.container .login_left .login_contain {
+  margin: 60px 104px;
+}
+.container .login_left .login_contain .logo {
+  width: 320px;
+}
+.container .login_left .login_contain .logo .logoimg {
+  width: 100%;
+  height: 50px;
+}
+.container .login_left .login_contain .logo .title {
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 12px;
+}
+.container .login_left .login_contain .vbhidden {
+  visibility: hidden;
+}
+.container .login_left .login_contain .type {
+  margin-top: 80px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .login_left .login_contain .type .type_title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 120%;
+  align-self: flex-start;
+}
+.container .login_left .login_contain .type .name, .container .login_left .login_contain .type .account, .container .login_left .login_contain .type .password, .container .login_left .login_contain .type .check {
+  width: 100%;
+}
+.container .login_left .login_contain .type .account {
+  margin-top: 24px;
+}
+.container .login_left .login_contain .type .name, .container .login_left .login_contain .type .password, .container .login_left .login_contain .type .check {
+  margin-top: 12px;
+}
+.container .login_left .login_contain .type .account, .container .login_left .login_contain .type .word, .container .login_left .login_contain .type .password, .container .login_left .login_contain .type .check {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.container .login_left .login_contain .type .formmail, .container .login_left .login_contain .type .formname, .container .login_left .login_contain .type .formpassword, .container .login_left .login_contain .type .formcheck {
+  width: 312px;
+  height: 40px;
+}
+.container .login_left .login_contain .type .formmail::placeholder, .container .login_left .login_contain .type .formname::placeholder, .container .login_left .login_contain .type .formpassword::placeholder, .container .login_left .login_contain .type .formcheck::placeholder {
+  color: #c6c6c6;
+}
+.container .login_left .login_contain .type .send_btn {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .login_left .login_contain .type .send_btn .btn {
+  padding: 12px 48px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #f2efe7;
+  background-color: #584400;
+  border: none;
+  line-height: 150%;
+}
+.container .login_left .login_contain .type .send_btn .btn:hover {
+  cursor: pointer;
+  background-color: #fffbf2;
+  color: #584400;
+}
+.container .login_left .login_contain .type .send_btn .btn1 {
+  margin-top: 24px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.container .login_left .login_contain .type .send_btn .btn1:hover {
+  cursor: pointer;
+  text-decoration-line: underline;
+}
