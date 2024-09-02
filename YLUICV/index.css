@@ -1,0 +1,504 @@
+@charset "UTF-8";
+/* css reset */
+html, body, div, span, applet, object, iframe, h1, h2,
+h3, h4, h5, h6, p, blockquote, pre, del, dfn, em, img, ins, kbd,
+q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption, footer,
+header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer,
+header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif, "Noto Sans TC", sans-serif, "微軟正黑體";
+  position: relative;
+  color: white;
+  background-color: white;
+}
+
+.body_contain {
+  max-width: 1440px;
+  background-color: white;
+}
+
+.container {
+  max-width: 1296px;
+  margin-left: 52px;
+  margin-right: 52px;
+}
+
+.section_header {
+  background-color: #fffbf2;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 20;
+  position: relative;
+}
+.section_header .container {
+  display: flex;
+  justify-content: space-between;
+}
+.section_header .container .logo, .section_header .container .btn1, .section_header .container .btn2 {
+  color: #df9e52;
+}
+.section_header .container .logo {
+  margin: 6px 8px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.8px;
+}
+.section_header .container .btn_item {
+  display: flex;
+}
+.section_header .container .btn_item .btn1, .section_header .container .btn_item .btn2 {
+  margin: 10px 15px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.2px;
+  cursor: pointer;
+}
+.section_header .container .btn_item .text1 {
+  text-decoration: none;
+  color: #482900;
+}
+
+.section_banner {
+  max-width: 100%;
+  background-color: #fffbf2;
+  padding-top: 40px;
+}
+.section_banner .container {
+  display: flex;
+}
+.section_banner .container .self_info, .section_banner .container .self_photo {
+  width: 50%;
+}
+.section_banner .container .self_photo {
+  background-image: url("./image/Group319.png");
+  background-size: cover;
+  height: 510px;
+  margin-left: 24px;
+}
+.section_banner .container .self_info {
+  padding: 24px 0px;
+}
+.section_banner .container .con1, .section_banner .container .con2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.8px;
+  color: #df9e52;
+}
+.section_banner .container .con2 {
+  margin-top: 20px;
+}
+.section_banner .container .title1 {
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 96px;
+  letter-spacing: 4px;
+  color: #df9e52;
+  margin-top: 64px;
+}
+.section_header .container .btn_item .text1:hover {
+  color: #df9e52;
+}
+.section_intro {
+  max-width: 100%;
+  background-color: #fffbf2;
+  padding-top: 40px;
+}
+.section_intro .container {
+  padding-top: 12px;
+}
+.section_intro .container .title2 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 33.6px;
+  color: #673d00;
+}
+.section_intro .container .con3 {
+  margin-top: 16px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 48px;
+  color: #673d00;
+}
+.section_intro .container .fontstyle {
+  color: #df9e52;
+}
+
+.list1, .list2, .list3, .list4 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #673d00;
+  list-style-type: disc;
+  padding-left: 32px;
+  text-indent: -22px;
+}
+
+.list5 {
+  color: #673d00;
+  list-style-type: square;
+  margin-left: 16px;
+  padding-left: 8px;
+  text-indent: -2px;
+  list-style-type: disc;
+}
+
+.list2, .list3, .list4 {
+  margin-top: 8px;
+}
+
+.list1 {
+  margin-top: 12px;
+}
+
+.section_skill {
+  max-width: 100%;
+  margin-top: 60px;
+}
+.section_skill .container .skill_title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 33.6px;
+  color: #673d00;
+}
+.section_skill .container .skill_contain {
+  display: flex;
+  justify-content: space-around;
+}
+.section_skill .container .skill_contain .skill {
+  width: 25%;
+  height: 263px;
+  margin-top: 30px;
+}
+.section_skill .container .skill_contain .skill2, .section_skill .container .skill_contain .skill3, .section_skill .container .skill_contain .skill4 {
+  margin-left: 24px;
+}
+.section_skill .container .skill_contain .skill_top {
+  display: flex;
+}
+.section_skill .container .skill_contain .sk1, .section_skill .container .skill_contain .sk2 {
+  width: 24px;
+  height: 30px;
+}
+.section_skill .container .skill_contain .sk2 {
+  padding-left: 4px;
+}
+.section_skill .container .skill_contain .line {
+  border-top: 2px solid #df9e52;
+  margin-top: 16px;
+}
+.section_skill .container .skill_contain .ski_t {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 3px 0px;
+  padding-left: 12px;
+  color: #673d00;
+}
+
+.section_project {
+  max-width: 100%;
+  margin-top: 60px;
+}
+.section_project .container .project_title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 33.6px;
+  color: #673d00;
+}
+.section_project .container .project_contain {
+  display: flex;
+  margin-top: 30px;
+}
+.section_project .container .project_info, .section_project .container .project_photo {
+  width: 50%;
+}
+.section_project .container .project_photo {
+  background-image: url("./image/Group320.png");
+  background-size: cover;
+}
+.section_project .container .project_info {
+  margin-left: 24px;
+}
+.section_project .container .project_info .subtag {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #673d00;
+  margin-top: 48px;
+}
+.section_project .container .project_info .pro_t {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 72px;
+  color: #df9e52;
+  margin-top: 8px;
+}
+.section_project .container .project_info .pro_subt {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #673d00;
+  margin-top: 20px;
+}
+.section_project .container .project_info .pro {
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #673d00;
+  margin-bottom: 72px;
+}
+.section_project .container .project_info .btn_link {
+  text-decoration: none;
+}
+.section_project .container .project_info .btn {
+  background-color: #673d00;
+  width: 196px;
+  padding: 12px 0px;
+  border-radius: 8px;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #fff9f4;
+  cursor: pointer;
+}
+
+.ski_t1 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 33.6px;
+  padding: 3px 0px;
+  color: #673d00;
+}
+
+.ski_t2 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 33.6px;
+  color: #673d00;
+}
+
+.list_1, .list_2, .list_3, .list_4 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #673d00;
+  list-style-type: disc;
+  padding-left: 32px;
+  text-indent: -32px;
+}
+
+.list_5 {
+  color: #673d00;
+  list-style-type: square;
+  margin-left: 16px;
+  padding-left: 32px;
+}
+
+.list_2, .list_3, .list_4 {
+  margin-top: 8px;
+}
+
+.list_1 {
+  margin-top: 12px;
+}
+
+.section_portfolio {
+  max-width: 100%;
+  margin-top: 60px;
+}
+.section_portfolio .container .portfolio_title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 33.6px;
+  color: #673d00;
+}
+.section_portfolio .container .portfolio {
+  margin-top: 30px;
+}
+.section_portfolio .container .portfolio, .section_portfolio .container .portfolio_1 {
+  max-width: 100%;
+  height: 366px;
+  display: flex;
+}
+.section_portfolio .container .portfo1, .section_portfolio .container .portfo2 {
+  width: 50%;
+  display: flex;
+  border: 1px solid #865309;
+  border-radius: 8px;
+}
+.section_portfolio .container .portfo2 {
+  margin-left: 24px;
+}
+.section_portfolio .container .portfolio_1 {
+  margin-top: 24px;
+}
+.section_portfolio .container .portfol_img {
+  width: 54%;
+  padding: 16px;
+}
+.section_portfolio .container .portimg {
+  width: 306px;
+  height: 306px;
+}
+.section_portfolio .container .portfol_info {
+  width: 46%;
+  margin-left: 8px;
+  padding: 16px;
+}
+
+.section_work {
+  max-width: 100%;
+  margin-top: 60px;
+}
+.section_work .container .work_title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 33.6px;
+  color: #673d00;
+}
+.section_work .container .work {
+  display: flex;
+  margin-top: 30px;
+  border: 1px solid #865309;
+  border-radius: 8px;
+}
+.section_work .container .worktime, .section_work .container .workinfo {
+  padding: 28px;
+}
+.section_work .container .worktime {
+  width: 24%;
+}
+.section_work .container .worktime .day {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 33.6px;
+  color: #673d00;
+}
+.section_work .container .worktime .location {
+  display: flex;
+  margin-top: 12px;
+}
+.section_work .container .worktime .location .fas.fa-map-marker-alt {
+  font-size: 20px;
+  line-height: 30px;
+  color: #673d00;
+}
+.section_work .container .worktime .location .locat {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #673d00;
+  margin-left: 8px;
+}
+.section_work .container .workinfo {
+  width: 76%;
+  margin-left: 24px;
+}
+.section_work .container .workinfo .work_subt {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.8px;
+  color: #673d00;
+  margin-top: 8px;
+}
+
+.section_school {
+  max-width: 100%;
+  height: 283px;
+  background-color: #482900;
+  margin-top: 60px;
+}
+.section_school .container .school_title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 33.6px;
+  color: #fff9f4;
+  padding-top: 20px;
+}
+.section_school .container .school {
+  display: flex;
+  height: 140px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+.section_school .container .school .school_logo {
+  width: 10%;
+  align-self: center;
+}
+.section_school .container .school .school_logo .sch {
+  width: 90px;
+  height: 90px;
+}
+.section_school .container .school .school_info {
+  width: 65%;
+  margin-left: 24px;
+  padding: 28px 0px;
+}
+.section_school .container .school .school_info .scht {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 33.6px;
+  color: #fff9f4;
+}
+.section_school .container .school .school_info .schsubt {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.8px;
+  color: #fff9f4;
+  margin-top: 8px;
+}
+.section_school .container .school .school_time {
+  width: 25%;
+  margin-left: 24px;
+  padding: 28px 0px;
+}
+.section_school .container .school .school_time .schtime {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.8px;
+  letter-spacing: 2.4px;
+  color: #fff9f4;
+}
