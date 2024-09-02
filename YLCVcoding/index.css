@@ -90,11 +90,16 @@ body {
   font-size: 16px;
   font-weight: 700;
   line-height: 19.2px;
+}
+.section_header .container .btn_item .btn2 {
   cursor: pointer;
 }
 .section_header .container .btn_item .text1 {
   text-decoration: none;
   color: #df9e52;
+}
+.section_header .container .btn_item .text1:hover {
+  color: #673d00;
 }
 
 .section_banner {
